@@ -9,6 +9,8 @@ Fruits:
       origin: asia
   - banana
   - pineapple
+  - guava
+ 
 
 text: |
 this is first line
