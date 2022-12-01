@@ -1,0 +1,23 @@
+---
+- name: user creation play book for webservers
+  hosts: webservers
+  tasks:
+    - name: Add the user 'john' with a specific uid and a primary group of 'sudo'
+      user:
+        name: Harshitha
+        comment: Harshitha Gutta
+        uid: 1706
+        group: sudo
+
+- name: multifile creation in allservers playbook
+  hosts: allservers
+  tasks:
+    - name: multiple files using list
+      file:
+        path: "/tmp/{{item}}"
+        state: touch
+      with_items:
+        - first.txt
+        - second.txt
+        - third.txt
+...

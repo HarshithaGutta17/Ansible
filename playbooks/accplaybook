@@ -1,0 +1,9 @@
+- name: create user in remote machine
+  hosts: webservers
+  tasks:
+   name: Add user 'Harshitha' with a specific uid and a primary group
+    user:
+     name: Harshitha
+     comment: Harshitha Gutta
+     uid: 1040
+     group:admin

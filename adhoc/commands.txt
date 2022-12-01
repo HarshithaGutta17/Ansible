@@ -8,3 +8,12 @@ ansible --help
 
 
 -i inventory.txt
+
+
+#connect remotely
+ssh student@10.0.1.22
+on the remote system install the open ssh serversgroup
+#10.0.1.22
+apt update
+apt install openssh-servers
+systemctl 

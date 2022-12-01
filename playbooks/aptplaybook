@@ -1,0 +1,10 @@
+- name: install vim
+  hosts: allservers
+  tasks:
+    apt:
+     name: Run the equivalent apt-update 
+     update_cache: yes
+ 
+    apt:
+     name: install vim
+
